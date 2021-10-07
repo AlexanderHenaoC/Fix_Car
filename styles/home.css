@@ -1,0 +1,210 @@
+/* Eslogan */
+
+.cont-slogan {
+    padding: 7%;
+    background-image: linear-gradient( to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/styles/images/man-garage.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom: solid 1px #222628;
+}
+
+.cont-slogan-p {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+    border-top: solid 1px #222628;
+    box-shadow: inset 0px 1px 0px 0px #3e484a;
+    color: rgb(0, 0, 0);
+    color: #ffffff;
+}
+
+.cont-slogan-s {
+    font-size: 3em;
+    align-self: center;
+    text-align: right;
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.cont-slogan-s span {
+    color: #2dabfb;
+    font-weight: 900;
+}
+
+.cont-btn-slogan {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: center;
+}
+
+.cont-btn-slogan a {
+    background-image: -moz-linear-gradient(top, #411bed, #3e00ce);
+    background-image: -webkit-linear-gradient(top, #481bed, #1f00ce);
+    background-image: -ms-linear-gradient(top, #411bed, #2600ce);
+    background-image: linear-gradient(top, #291bed, #6000ce);
+    background-color: #3a1bed;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 45px;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.75), inset 0px 2px 0px 0px rgba(255, 192, 192, 0.5), inset 0px 0px 0px 2px rgba(255, 96, 96, 0.85), 3px 3px 3px 1px rgba(0, 0, 0, 0.15);
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5);
+    font-size: 150%;
+    transition: all .3s;
+}
+
+.cont-btn-slogan a:hover {
+    background: #1e0999;
+}
+
+.cont-img-slogan {
+    grid-column: 4/6;
+    grid-row: 1/3;
+    margin: 15px;
+    align-self: center;
+}
+
+.cont-img-slogan img {
+    width: 100%;
+}
+
+.cont-info-slogan {
+    font-size: 2em;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    justify-self: center;
+}
+
+.cont-info-slogan li {
+    display: inline-block;
+    list-style: none;
+}
+
+.cont-info-slogan span {
+    color: #2dabfb;
+    font-weight: 900;
+}
+
+.slg-li {
+    display: inline-block;
+}
+
+.slg-img {
+    display: inline-block;
+    width: 10%;
+}
+
+.cont-info-slogan img {
+    width: 100%;
+}
+
+/* Main */
+
+.i-if-gr {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: .5 1fr 1fr 1fr 1fr;
+}
+
+.if-gr-tl {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    padding: 5%;
+    padding-bottom: 0;
+    font-size: 2em;
+    align-self: center;
+    text-align: right;
+    color: #2d7bfb;
+}
+
+.if-gr-iu {
+    grid-column: 1/3;
+    grid-row: 2/4;
+}
+
+.if-gr-tu {
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+
+.if-gr-id {
+    grid-column: 3/5;
+    grid-row: 2/4;
+}
+
+.if-gr-td {
+    grid-column: 3/5;
+    grid-row: 4/5;
+}
+
+.if-ft {
+    padding: 10%;
+    padding-top: 0;
+    font-size: 1.5em;  
+}
+
+.if-ft span {
+    color: #2d7bfb;
+}
+
+.if-fi img {
+    width: 80%;
+    padding: 10%;
+    padding-top: 5%;
+    padding-bottom: 0;
+    text-align: center;
+}
+ 
+/* Por qué elegirnos */
+
+.cont-s-if {
+    display: grid;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "a b" "a c" "a d";
+}
+
+.s-if-i {
+    padding-top: 15%;
+    padding-left: 10%;
+    grid-area: a;
+}
+
+.s-if-i img {
+    width: 100%;
+    border-radius: 3%;
+    box-shadow: 10px 5px 5px #000000;
+    transform: rotate(75deg);
+}
+
+.s-if-tl {
+    font-size: 2.5em;
+    text-align: center;
+    color: #2d7bfb;
+}
+
+.s-if-pt {
+    grid-area: b;
+}
+
+.s-if-st {
+    grid-area: c;
+    text-align: right;
+}
+
+.s-if-tt {
+    grid-area: d;
+}
+
+.f-t-s-if {
+    font-size: 1.3em;
+}
+
+.f-t-s-if span {
+    font-size: 1.5em;
+    color: #2dabab;
+}
