@@ -1,10 +1,9 @@
-</main>
     <footer>
         <div class="cont-ftr">
             <div class="cont-ftr-lft p-t">
                 <div class="ftr-lft-lg">
                     <!-- logo -->
-                    <a href="home.html"><img src="/templates/images/logo_small_icon_only.png" alt=""></a>
+                    <a href="home.html"><img src="../templates/images/logo_small_icon_only.png" alt=""></a>
                 </div>
                 <div class="ftr-lft-nm">
                     <!-- nombre -->
@@ -14,19 +13,19 @@
                     <!-- redes sociales -->
                     <div class="ftr-rs c-img">
                         <!-- facebook -->
-                        <a href="#"><img src="/templates/images/facebook.png" alt=""></a>
+                        <a href="#"><img src="../templates/images/facebook.png" alt=""></a>
                     </div>
                     <div class="ftr-rs c-img">
                         <!-- twitter -->
-                        <a href="#"><img src="/templates/images/twitter.png" alt=""></a>
+                        <a href="#"><img src="../templates/images/twitter.png" alt=""></a>
                     </div>
                     <div class="ftr-rs c-inst">
                         <!-- instagram -->
-                        <a href="#"><img src="/templates/images/instagram.png" alt=""></a>
+                        <a href="#"><img src="../templates/images/instagram.png" alt=""></a>
                     </div>
                     <div class="ftr-rs c-img">
                         <!-- ln -->
-                        <a href="#"><img src="/templates/images/linkedin.png" alt=""></a>
+                        <a href="#"><img src="../templates/images/linkedin.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -43,19 +42,19 @@
             </div>
             <div class="cont-ftr-rgt p-t">
                 <div class="ftr-rgt-icn c-img-r">
-                    <img src="/templates/images/check.png" alt="">
+                    <img src="../templates/images/check.png" alt="">
                 </div>
                 <div class="ftr-rgt-srv">
                     <a href="#">Servicios</a>
                 </div>
                 <div class="ftr-rgt-icn c-img-r">
-                    <img src="/templates/images/check.png" alt="">
+                    <img src="../templates/images/check.png" alt="">
                 </div>
                 <div class="ftr-rgt-qs">
                     <a href="#">Quiénes somos</a>
                 </div>
                 <div class="ftr-rgt-icn c-img-r">
-                    <img src="/templates/images/check.png" alt="">
+                    <img src="../templates/images/check.png" alt="">
                 </div>
                 <div class="ftr-rgt-cf">
                     <a href="#">Cómo funciona</a>
@@ -88,6 +87,6 @@
             </div>
         </div>
     </footer>
-</body>
+    </body>
 
-</html>
+    </html>

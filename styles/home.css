@@ -2,7 +2,7 @@
 
 .cont-slogan {
     padding: 7%;
-    background-image: linear-gradient( to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/styles/images/man-garage.jpg);
+    background-image: url(/styles/images/man-garage_opt.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -100,6 +100,7 @@
     width: 100%;
 }
 
+
 /* Main */
 
 .i-if-gr {
@@ -142,7 +143,7 @@
 .if-ft {
     padding: 10%;
     padding-top: 0;
-    font-size: 1.5em;  
+    font-size: 1.5em;
 }
 
 .if-ft span {
@@ -156,7 +157,8 @@
     padding-bottom: 0;
     text-align: center;
 }
- 
+
+
 /* Por qué elegirnos */
 
 .cont-s-if {
