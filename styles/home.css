@@ -1,8 +1,9 @@
 /* Eslogan */
 
 .cont-slogan {
-    padding: 7%;
-    background-image: url(/styles/images/man-garage_opt.jpg);
+    padding: 5%;
+    padding-top: 1%;
+    background-image: linear-gradient( to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/man-garage.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -33,7 +34,7 @@
 }
 
 .cont-btn-slogan {
-    grid-column: 3/4;
+    grid-column: 3/5;
     grid-row: 2/3;
     align-self: center;
     justify-self: center;
@@ -114,10 +115,14 @@
     grid-row: 1/2;
     padding: 5%;
     padding-bottom: 0;
-    font-size: 2em;
+    font-size: 1.5em;
     align-self: center;
     text-align: right;
+}
+
+.if-gr-tl span {
     color: #2d7bfb;
+    font-size: 1.7em;
 }
 
 .if-gr-iu {

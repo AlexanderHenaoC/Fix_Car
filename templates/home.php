@@ -14,25 +14,25 @@ include "../includes/header.php";
                     <a href="#">Agenda tu cita</a>
                 </div>
                 <div class="cont-img-slogan">
-                    <a class="img-slogan" href="#"><img src="../templates/images/logo_white_large.png" alt=""></a>
+                    <a class="img-slogan" href="#"><img src="../images/logo_white_large.png" alt=""></a>
                 </div>
                 <div class="cont-info-slogan">
                     <div>
-                        <div class="slg-img"><img src="../templates/images/check-slg.png" alt=""></div>
+                        <div class="slg-img"><img src="../images/check-slg.png" alt=""></div>
                         <div class="slg-li">
                             <li><span>Fácil</span> de usar</li>
                         </div>
                     </div>
                     <div>
-                        <div class="slg-img"><img src="../templates/images/ubicacion.png" alt=""></div>
+                        <div class="slg-img"><img src="../images/ubicacion.png" alt=""></div>
                         <div class="slg-li">
                             <li>Agenda <span>donde estés</span></li>
                         </div>
                     </div>
                     <div>
-                        <div class="slg-img"><img src="../templates/images/llaves.png" alt=""></div>
+                        <div class="slg-img"><img src="../images/llaves.png" alt=""></div>
                         <div class="slg-li">
-                            <li><span>Cualquier</span> tipo de <span>vehículo</span></li>
+                            <li><span>Cualquier</span> vehículo.</li>
                         </div>
                     </div>
                 </div>
@@ -43,12 +43,12 @@ include "../includes/header.php";
                 <div class="cont-ift">
                     <div class="i-if-gr">
                         <div class="if-gr-tl">
-                            <h2>Somos conscientes de la importancia en la seguridad, por eso exigimos a nuestros
+                            <h2><span>Somos</span> conscientes de la importancia en la <span>seguridad</span>, por eso exigimos a nuestros
                                 aliados
                             </h2>
                         </div>
                         <div class="if-gr-iu if-fi">
-                            <img src="../templates/images/motorbike-407186_1920.jpg" alt="">
+                            <img src="../images/motorbike-407186_1920.jpg" alt="">
                         </div>
                         <div class="if-gr-tu if-ft">
                             <b>
@@ -59,7 +59,7 @@ include "../includes/header.php";
                             distinctio? Eligendi, quos sequi iure veritatis quidem fugiat?</p>
                         </div>
                         <div class="if-gr-id if-fi">
-                            <img src="../templates/images/security-265130_1920.jpg" alt="">
+                            <img src="../images/security-265130_1920.jpg" alt="">
                         </div>
                         <div class="if-gr-td if-ft">
                             <b>
@@ -75,7 +75,7 @@ include "../includes/header.php";
                     </div>
                     <div class="cont-s-if">
                         <div class="s-if-i">
-                            <img src="../templates/images/street-map-2679271_1920.jpg" alt="">
+                            <img src="../images/street-map-2679271_1920.jpg" alt="">
                         </div>
                         <div class="s-if-pt f-t-s-if">
                             <h4><span>Tu tiempo es nuestra prioridad</span></h4>
