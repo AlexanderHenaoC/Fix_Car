@@ -1,6 +1,7 @@
 <?php
 include "../includes/header.php"
 ?>
+<link rel="stylesheet" href="../styles/login.css">
 <div class="main">
     <div class="cont-main">
         <div>
