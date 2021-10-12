@@ -16,8 +16,8 @@
     include "../includes/header.php";
     ?>
 
-    <main class="main">
-        <div>
+    <div class="cont-main">
+        <main>
             <div class="cont-slogan">
                 <div class="cont-slogan-p">
                     <div class="cont-slogan-s">
@@ -116,8 +116,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
+        </main>
+    </div>
     <?php
     include "../includes/footer.php";
     ?>
