@@ -1,0 +1,10 @@
+.img-proceso {
+    align-items: center;
+    text-align: center;
+}
+
+.img-proceso p {
+    margin: auto;
+    font-size: 5em;
+    display: inline-block;
+}
