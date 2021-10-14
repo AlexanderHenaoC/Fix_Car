@@ -10,7 +10,7 @@
                     <li><a href="#">Quiénes somos</a></li>
                     <li><a href="#">¿Cómo funciona?</a></li>
                     <li><a href="../templates/login.php">Iniciar sesión</a></li>
-                    <li><a href="#">Registrarse</a></li>
+                    <li><a href="../templates/registro.php">Registrarse</a></li>
                 </ul>
             </nav>
         </div>
