@@ -3,11 +3,11 @@
         <div class="cont-ftr-lft p-t">
             <div class="ftr-lft-lg">
                 <!-- logo -->
-                <a href="home.html"><img src="../images/logo_small_icon_only.png" alt=""></a>
+                <a href="../templates/home.php"><img src="../images/logo_small_icon_only-removebg-preview.png" alt=""></a>
             </div>
             <div class="ftr-lft-nm">
                 <!-- nombre -->
-                <a href="home.html">Fix Car</a>
+                <a href="../templates/home.php">Fix Car</a>
             </div>
             <div class="ftr-lft-rs">
                 <!-- redes sociales -->

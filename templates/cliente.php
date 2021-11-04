@@ -2,10 +2,24 @@
 
 session_start();
 if (empty($_SESSION['active'])) {
+    session_destroy();
     header('location: login.php');
+} else {
+    if ($_SESSION['id_rol'] != 1) {
+        if ($_SESSION['id_rol'] == 2) {
+        } else {
+            if ($_SESSION['id_rol'] == 3) {
+                header('location: vendedor.php');
+            } else {
+                header('location: login.php');
+            }
+        }
+    } else {
+        header('location: admin.php');
+    }
 }
-
 include 'functions.php';
+
 ?>
 <!DOCTYPE html>
 <html lang="es">

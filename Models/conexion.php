@@ -1,7 +1,7 @@
 <?php
 
 $db = 'Fix Car';
-$user = 'root';
+$user = 'devalex';
 $pass = '';
 $host = 'localhost';
 

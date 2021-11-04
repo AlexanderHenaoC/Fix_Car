@@ -3,8 +3,21 @@
 session_start();
 if (empty($_SESSION['active'])) {
     header('location: login.php');
+    session_destroy();
+} else {
+    if ($_SESSION['id_rol'] != 1) {
+        if ($_SESSION['id_rol'] == 2) {
+            header('location: cliente.php');
+        } else {
+            if ($_SESSION['id_rol'] == 3) {
+                header('location: vendedor.php');
+            } else {
+                header('location: login.php');
+            }
+        }
+    } else {
+    }
 }
-
 include 'functions.php';
 ?>
 
@@ -27,7 +40,6 @@ include 'functions.php';
         <a href="salir.php">Salir</a>
         <h1>Soy un admin</h1><br>
         <span><?php echo $_SESSION['nombre']; ?></span><br>
-        <a href="../../Controllers/salir.php">Salir</a>
 
     </header>
     <div class="img-proceso">

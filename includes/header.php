@@ -4,7 +4,7 @@
             <img src="../images/logo_small_icon_only.png" alt="">
             <h1><a href="home.php">FixCar</a></h1>
         </div>
-        <div class="cont-nav">
+        <div class="cont-nav"> 
             <nav>
                 <ul>
                     <li><a href="#">Quiénes somos</a></li>

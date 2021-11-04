@@ -25,31 +25,31 @@
                             "Tu <span>tiempo</span> es muy <span>importante</span>, por eso lo <span>cuidamos</span>."
                         </p>
                     </div>
+                    <div class="cont-info-slogan">
+                        <div class="slg-img">
+                            <div><img src="../images/check-slg.png" alt=""></div>
+                            <div class="slg-li">
+                                <li><span>Fácil</span> de usar</li>
+                            </div>
+                        </div>
+                        <div class="slg-img">
+                            <div><img src="../images/ubicacion.png" alt=""></div>
+                            <div class="slg-li">
+                                <li>Agenda <span>donde estés</span></li>
+                            </div>
+                        </div>
+                        <div class="slg-img">
+                            <div><img src="../images/llaves.png" alt=""></div>
+                            <div class="slg-li">
+                                <li><span>Cualquier</span> vehículo.</li>
+                            </div>
+                        </div>
+                    </div>
                     <div class="cont-btn-slogan">
                         <a href="#">Agenda tu cita</a>
                     </div>
                     <div class="cont-img-slogan">
                         <a class="img-slogan" href="#"><img src="../images/logo_white_large.png" alt=""></a>
-                    </div>
-                    <div class="cont-info-slogan">
-                        <div>
-                            <div class="slg-img"><img src="../images/check-slg.png" alt=""></div>
-                            <div class="slg-li">
-                                <li><span>Fácil</span> de usar</li>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slg-img"><img src="../images/ubicacion.png" alt=""></div>
-                            <div class="slg-li">
-                                <li>Agenda <span>donde estés</span></li>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slg-img"><img src="../images/llaves.png" alt=""></div>
-                            <div class="slg-li">
-                                <li><span>Cualquier</span> vehículo.</li>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
