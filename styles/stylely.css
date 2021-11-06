@@ -28,11 +28,11 @@ body {
     align-items: center;
 }
 
-.cont-title h1 {
-    font-size: 2.3em;
-}
-
-.cont-title h1 a {
+.cont-title a {
+    display: flex;
+    font-size: 1.5em;
+    align-items: center;
+    line-height: .3;
     color: rgb(55, 16, 196);
     text-decoration: none;
 }

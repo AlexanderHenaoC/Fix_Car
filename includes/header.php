@@ -1,8 +1,7 @@
 <header>
     <div class="cont-header">
         <div class="cont-title">
-            <img src="../images/logo_small_icon_only.png" alt="">
-            <h1><a href="home.php">FixCar</a></h1>
+            <a href="home.php"><img src="../images/logo_small_icon_only.png" alt=""><h1>FixCar</h1></a>
         </div>
         <div class="cont-nav"> 
             <nav>
