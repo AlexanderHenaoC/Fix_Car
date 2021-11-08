@@ -47,30 +47,32 @@ fgf<?php
     <?php
     include "../includes/header.php"
     ?>
-    <div class="main">
-        <div class="cont-main">
+    <div class="cont-main">
+        <main>
             <div>
-                <div class="cont-log-img">
-                    <img class="i-lg it" src="../images/s3.jpg" alt="">
-                    <img class="i-lg ic" src="../images/sc.jpg" alt="">
-                    <img class="i-lg ici" src="../images/s5.jpg" alt="">
-                    <img class="i-lg iu" src="../images/su.jpg" alt="">
-                    <img class="i-lg id" src="../images/sd.jpg" alt="">
-                </div>
-                <div class="frm-log">
-                    <h4>Ingresar</h4>
-                    <form action="" method="POST">
-                        <div class="alert"><?php echo isset($alert) ? $alert : ''; ?></div>
-                        <input class="input" type="text" name="correo" id="correo" placeholder="Ingrese su correo"><br>
-                        <input class="input" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña"><br>
-                        <input class="btn" type="submit" value="ingresar"><br>
-                        <p class="ntuc">No tienes una cuenta?<br>
-                            Registrate <a href="registro.php">aquí</a></p>
-                    </form>
+                <div class = "cont-reg">
+                    <div class="cont-log-img">
+                        <img class="i-lg iu" src="../images/su.jpg" alt="">
+                        <img class="i-lg id" src="../images/sd.jpg" alt="">
+                        <img class="i-lg it" src="../images/s3.jpg" alt="">
+                        <img class="i-lg ic" src="../images/sc.jpg" alt="">
+                        <img class="i-lg ici" src="../images/s5.jpg" alt="">
+                    </div>
+                    <div class="frm-log">
+                        <h4 class = "reg-tlt">Ingresar</h4>
+                        <form action="" method="POST">
+                            <div class="alert"><?php echo isset($alert) ? $alert : ''; ?></div>
+                            <input class="input" type="text" name="correo" id="correo" placeholder="Ingrese su correo"><br>
+                            <input class="input" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña"><br>
+                            <input class="btn" type="submit" value="ingresar"><br>
+                            <p class="ntuc">No tienes una cuenta?<br>
+                                Registrate <a href="registro.php">aquí</a></p>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
     </div>
+    </main>
     <?php
     include "../includes/footer.php"
     ?>

@@ -11,11 +11,10 @@
     <title>FixCar</title>
 </head>
 
-<body>
+<body> 
     <?php
     include "../includes/header.php";
     ?>
-
     <div class="cont-main">
         <main>
             <div class="cont-slogan">
