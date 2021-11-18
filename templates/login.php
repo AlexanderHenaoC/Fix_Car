@@ -14,7 +14,7 @@ fgf<?php
     } else {
         if (!empty($_POST)) {
             if (empty($_POST['correo']) || empty($_POST['contraseña'])) {
-                $alert = '<div class="alert-error alert-error-l">Ingrese su correo y su contraseña </div>';
+                $alert = '<div class="alert-error alert-error-l"><li>Ingrese su correo y su contraseña </li></div>';
             } else {
                 require_once "vuser.php";
                 if ($rows == 1) {
@@ -22,7 +22,7 @@ fgf<?php
                     if (password_verify($passu, $passh['contraseña'])) {
                         require "varsess.php";
                     } else {
-                        $alert = '<div class="alert-error alert-error-l">Los datos ingresados son incorrectos</div>';
+                        $alert = '<div class="alert-error alert-error-l"><li>Los datos ingresados son incorrectos</li></div>';
                         session_destroy();
                     }
                 }
@@ -39,7 +39,7 @@ fgf<?php
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/login.css">
     <link rel="stylesheet" href="../styles/stylely.css">
-    <link rel="shortcut icon" href="../images/logo_small_icon_only.png" type="image/png">
+    <link rel="shortcut icon" href="../images/logo_small_icon_only-removebg-preview.png" type="image/png">
     <title>Ingreso</title>
 </head>
 

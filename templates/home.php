@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/stylely.css">
     <link rel="stylesheet" href="../styles/home.css">
-    <link rel="shortcut icon" href="../images/logo_small_icon_only.png" type="image/png">
+    <link rel="shortcut icon" href="../images/logo_small_icon_only-removebg-preview.png" type="image/png">
     <title>FixCar</title>
 </head>
-
+ 
 <body> 
     <?php
     include "../includes/header.php";

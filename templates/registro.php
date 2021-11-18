@@ -31,7 +31,7 @@ if (count($alert) == 0) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/stylely.css">
     <link rel="stylesheet" href="../styles/login.css">
-    <link rel="shortcut icon" href="../images/logo_small_icon_only.png" type="image/png">
+    <link rel="shortcut icon" href="../images/logo_small_icon_only-removebg-preview.png" type="image/png">
     <title>Registro</title>
 </head>
 
@@ -84,7 +84,7 @@ if (count($alert) == 0) {
                                 <a href="login.php">Iniciar sesión</a><br><br>
                             </p>
                             <p class="ntuc ntuc-reg">
-                                Tiene un taller?<a href="#"> registrelo aquí</a>
+                                Tiene un taller?<a href="registro_taller.php"> registrelo aquí</a>
                             </p>
                         </form>
                     </div>
