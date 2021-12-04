@@ -64,7 +64,7 @@
 /* Formulario */
 
 .frm-log {
-    margin-top: 47vh;
+    margin-top: 20vh;
     width: 25vw;
     height: 60vh;
     position: relative;
@@ -141,14 +141,14 @@
     color: #5b39a8;
 }
 
+.btn:hover {
+    background-color: #91def1;
+}
+
 .btn a {
     text-decoration: none;
     color: #5b39a8;
     transition: .3s ease;
-}
-
-.btn:hover {
-    background-color: #91def1;
 }
 
 .ntuc {

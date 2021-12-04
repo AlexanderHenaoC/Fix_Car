@@ -2,23 +2,23 @@
 
 session_start();
 if (empty($_SESSION['active'])) {
-    header('location: login.php');
     session_destroy();
+    header('location: login.php');
 } else {
-    if ($_SESSION['id_rol'] != 1) {
-        if ($_SESSION['id_rol'] == 2) {
+    if (!empty($_SESSION['active'])) {
+        if ($_SESSION['id_rol'] == 1) {
+        } elseif ($_SESSION['id_rol'] == 2) {
             header('location: cliente.php');
-        } else {
-            if ($_SESSION['id_rol'] == 3) {
-                header('location: vendedor.php');
-            } else {
-                header('location: login.php');
-            }
+        } elseif ($_SESSION['id_rol'] == 3) {
+            header('location: vendedor.php');
+        } elseif ($_SESSION['id_rol'] == 4) {
         }
     } else {
+        header('location: login.php');
     }
 }
 include 'functions.php';
+ 
 ?>
 
 <!DOCTYPE html>

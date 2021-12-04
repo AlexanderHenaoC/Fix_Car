@@ -6,6 +6,7 @@ $telefono = $_POST['telefono'];
 $direccion = $_POST['direccion'];
 $correo = $_POST['correo'];
 $contraseña = $_POST['contraseña'];
+$rol = 2; 
 
 if (empty($_POST['nombre']) || !(preg_match("/^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$/", $nombre))) {
     array_push($alert, '<p>El campo nombre no puede tener números ni caracteres especiales y no puede estar vacio</p>');
@@ -25,5 +26,5 @@ if (empty($_POST['correo']) || !(preg_match("/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@
 if (empty($_POST['contraseña']) || !(preg_match("/^.*(?=.{6,})(?=.*\d)(?=.*[A-Z])(?=.*[a-z]).*$/", $contraseña))) {
     array_push($alert, '<p>La contraseña debe incluir mayúsculas, minúsculas, números, signos y seis o más caracteres</p>');
 }
-
+ 
 ?>

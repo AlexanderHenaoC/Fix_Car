@@ -1,29 +1,11 @@
 <?php
 
-session_start();
-if (empty($_SESSION['active'])) {
-    session_destroy();
-    header('location: login.php');
-} else {
-    if ($_SESSION['id_rol'] != 1) {
-        if ($_SESSION['id_rol'] == 2) {
-        } else {
-            if ($_SESSION['id_rol'] == 3) {
-                header('location: vendedor.php');
-            } else {
-                header('location: login.php');
-            }
-        }
-    } else {
-        header('location: admin.php');
-    }
-} 
-include 'functions.php';
-
+include '../includes/validar_log_cli.php';
+ 
 ?>
 <!DOCTYPE html>
 <html lang="es">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

@@ -1,5 +1,5 @@
 <?php
-
+ 
 if (!empty($_POST)) {
     $alert = array();
     $alert_ex = "";
@@ -7,12 +7,12 @@ if (!empty($_POST)) {
     include "val_form_taller.php";
 }
 if (count($alert) == 0) {
-    include "vreg.php";
+    include "vreg_taller.php";
 
-    if ($result > 0) {
-        $alert_ex = '<p>El usuario ya existe</p>';
+    if (count($result) > 0) {
+        $alert_ex = 'El usuario ya existe';
     } else {
-        include "ireg.php";
+        include "ireg_taller.php";
         if ($query_insert) {
             $alert_save = '<div class="alert-save"><p>Usuario creado exitosamente</p></div>';
         } else {
@@ -53,7 +53,7 @@ if (count($alert) == 0) {
                         <img class="i-lg ici" src="../images/s5.jpg" alt="">
                     </div>
                     <div class="frm-log-reg">
-                        <form action="" method="POST">
+                        <form method="POST" enctype="multipart/form-data">
                             <h4 class="reg-tlt">Registre su taller</h4>
                             <div class="alert">
                                 <?php
@@ -62,18 +62,18 @@ if (count($alert) == 0) {
                                     echo '<div>' . $alert_save . '</div>';
                                 } elseif (count($alert) > 0) {
                                     echo '<div class="alert-error">';
-                                    if (!empty($alert_ex)) {
-                                        echo '<li>' . $alert_ex . '</li>';
-                                    } else {
-                                        for ($i = 0; $i < count($alert); $i++) {
-                                            echo '<li>' . $alert[$i] . '</li>';
-                                        }
+                                    for ($i = 0; $i < count($alert); $i++) {
+                                        echo '<li>' . $alert[$i] . '</li>';
                                     }
                                     echo '</div>';
-                                } ?>
+                                } elseif (!empty($alert_ex)) {
+                                    echo '<div class="alert-error"><li>' . $alert_ex . '</li></div>';
+                                }
+                                ?>
                             </div>
                             <input class="input input-uno" type="text" name="nombre_taller" id="nombre" placeholder="Ingrese el nombre del taller"><br>
-                            <input type="file" name="fotografia_taller" id="fotografia_taller">
+                            <input type="file" id="fotografia_taller" name="fotografia_taller">
+                            <input type="text" name="descripcion_taller" placeholder="Breve descripción del taller" id="descripcion_taller">
                             <input class="input" type="text" name="telefono" id="telefono" placeholder="Ingrese su teléfono"><br>
                             <input class="input" type="text" name="direccion" id="direccion" placeholder="Ingrese su dirección"><br>
                             <input class="input" type="email" name="correo" id="correo" placeholder="Ingrese correo aquí"><br>

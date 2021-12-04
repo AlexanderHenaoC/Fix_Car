@@ -9,8 +9,8 @@ if (!empty($_POST)) {
 if (count($alert) == 0) {
     include "vreg.php";
 
-    if ($result > 0) {
-        $alert_ex = '<p>El usuario ya existe</p>';
+    if (count($result) > 0) {
+        $alert_ex = 'El usuario ya existe';
     } else {
         include "ireg.php";
         if ($query_insert) {
@@ -62,15 +62,14 @@ if (count($alert) == 0) {
                                     echo '<div>' . $alert_save . '</div>';
                                 } elseif (count($alert) > 0) {
                                     echo '<div class="alert-error">';
-                                    if (!empty($alert_ex)) {
-                                        echo '<li>' . $alert_ex . '</li>';
-                                    } else {
-                                        for ($i = 0; $i < count($alert); $i++) {
-                                            echo '<li>' . $alert[$i] . '</li>';
-                                        }
+                                    for ($i = 0; $i < count($alert); $i++) {
+                                        echo '<li>' . $alert[$i] . '</li>';
                                     }
                                     echo '</div>';
-                                } ?>
+                                } elseif (!empty($alert_ex)) {
+                                    echo '<div class="alert-error"><li>' . $alert_ex . '</li></div>';
+                                }
+                                ?>
                             </div>
                             <input class="input input-uno" type="text" name="nombre" id="nombre" placeholder="Ingrese sus nombres"><br>
                             <input class="input" type="text" name="apellidos" id="apellidos" placeholder="Ingrese sus apellidos"><br>
