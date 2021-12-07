@@ -109,7 +109,6 @@ if (!empty($_POST)) {
         </div>
         <div class="mn-cli-rt">
             <div class="cont-form-regv">
-                <div class="most-veh"></div>
                 <form method="POST" enctype="multipart/form-data">
                     <h3>Modificar vehículo</h3>
                     <div class="alert">

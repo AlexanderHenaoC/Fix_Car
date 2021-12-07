@@ -9,12 +9,11 @@ body {
 .flx-hdr {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .cont-hdr-cli {
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background: #ffffff;
     position: fixed;
@@ -23,6 +22,11 @@ body {
     z-index: 1000;
     border: solid 1px #bbbbbb;
     line-height: 0.7;
+}
+
+.cont-hdr-cli-u,
+.cont-nav {
+    margin: 0 2vw;
 }
 
 .cont-title {
@@ -64,7 +68,7 @@ body {
 /* Contenido */
 
 .mn-cli-lf {
-    height: 86.5vh;
+    height: 180vh;
     max-width: 25vw;
     border: solid 5px black;
     align-items: center;
@@ -81,14 +85,11 @@ body {
 }
 
 .ver-veh {
-    width: 75%;
+    width: 75vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    position: absolute;
-    top: 10vh;
-    left: 23vw;
     max-width: 75vw;
 }
 
@@ -108,6 +109,10 @@ h4 {
     border-radius: 6%;
     text-align: left;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.cits {
+    height: 58vh;
 }
 
 .vehs-agr {
@@ -174,7 +179,9 @@ h4 {
 }
 
 .vehs-fn p:first-child,
-.vehs-fn p:nth-child(0n+3) {
+.vehs-fn p:nth-child(0n+3),
+.vehs-fn p:nth-child(0n+5),
+.plc_cts {
     font-size: 1.4em;
     font-weight: 600;
     color: rgb(55, 16, 196);

@@ -32,7 +32,7 @@ include '../includes/validar_log_cli.php';
                 <?php
                 include "verveh.php";
                 while ($row = mysqli_fetch_assoc($query_ver_veh)) {
-                ?>
+                ?> 
                     <div class="vehs">
                         <div class="vehs-in">
                             <p><?php echo $row['placa']; ?></p>

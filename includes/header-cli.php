@@ -11,10 +11,9 @@
             <nav>
                 <ul>
                     <li><a href="cliente.php">Inicio</a></li>
-                    <li><a href="cliente.php">Agendar</a></li>
+                    <li><a href="reg_cit_cli.php">Agendar</a></li>
                     <li><a href="vehiculos.php">Mis vehículos</a></li>
-                    <li><a href="cliente.php">Cronograma</a></li>
-                    <li><a href="cliente.php">Historial</a></li>
+                    <li><a href="citas_cli.php">Citas</a></li>
                     <li><a href="salir.php">Salir</a></li>
                 </ul>
             </nav>
