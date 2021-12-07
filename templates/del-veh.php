@@ -50,14 +50,17 @@ if ($result_mod_veh == 0) {
                     if (!empty($_POST['si'])) {
                         $sql_update = mysqli_query(
                             $conection,
-                            "DELETE FROM `vehiculo` WHERE id_vehiculo = '$id_vehiculo'");
-                            if ($sql_update) {
-                                header('location: citas_cli.php');
-                            } else {
-                                echo 'Primero debe cancelar las citas del vehículo';
-                            }
+                            "UPDATE vehiculo
+                                SET  id_estado_veh = '2' 
+                                WHERE id_vehiculo = '$id_vehiculo'"
+                        );
+                        if ($sql_update) {
+                            header('location: vehiculos.php');
+                        } else {
+                            echo 'Primero debe cancelar las citas del vehículo';
+                        }
                     } elseif (!empty($_POST['no'])) {
-                        header('location: citas_cli.php');
+                        header('location: vehiculos.php');
                     }
                     ?>
                 </form>

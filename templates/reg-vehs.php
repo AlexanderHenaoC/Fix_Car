@@ -15,9 +15,9 @@ if (!empty($_POST)) {
             $query_insert = mysqli_query(
                 $conection,
                 "INSERT INTO vehiculo(placa, marca, modelo, color, fotografia, tipo_imagen, descripcion, 
-                                                                        id_usuario, id_tipo_vehiculo) 
+                                                                        id_usuario, id_tipo_vehiculo, id_estado_veh) 
                                         VALUES ('$placa', '$marca', '$modelo', '$color', '$binarios_imagen', '$tipo_archivo', '$descripcion',
-                                                                        '$usuario', '$id_tipo_vehiculo')"
+                                                                        '$usuario', '$id_tipo_vehiculo', '1')"
             );
             if ($query_insert) {
                 $alert_save = '<div class="alert-save"><p>Vehículo registrado exitosamente</p></div>';

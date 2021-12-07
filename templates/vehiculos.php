@@ -32,27 +32,30 @@ include '../includes/validar_log_cli.php';
                 <?php
                 include "verveh.php";
                 while ($row = mysqli_fetch_assoc($query_ver_veh)) {
+                    if ($row['id_estado_veh'] == 2) {
+                    } else {
                 ?>
-                    <div class="vehs">
-                        <div class="vehs-in">
-                            <p><?php echo $row['placa']; ?></p>
-                            <p class="img-vehs">
-                                <img width="100px" src="data:<?php echo $row['tipo_imagen']; ?>;base64,<?php echo base64_encode($row['fotografia']); ?>">
-                            </p>
+                        <div class="vehs">
+                            <div class="vehs-in">
+                                <p><?php echo $row['placa']; ?></p>
+                                <p class="img-vehs">
+                                    <img width="100px" src="data:<?php echo $row['tipo_imagen']; ?>;base64,<?php echo base64_encode($row['fotografia']); ?>">
+                                </p>
+                            </div>
+                            <div class="vehs-fn">
+                                <p>Marca:
+                                </p>
+                                <p><?php echo $row['marca']; ?></p>
+                                <p>Modelo:
+                                </p>
+                                <p><?php echo $row['modelo']; ?></p>
+                            </div>
+                            <div class="vehs-lnk">
+                                <a href="mod-vehs.php?id=<?php echo $row['id_vehiculo']; ?>" class="btn-cfcl">Modificar</a><a class="btn-cncl" href="del-veh.php?id=<?php echo $row['id_vehiculo']; ?>">Eliminar</a>
+                            </div>
                         </div>
-                        <div class="vehs-fn">
-                            <p>Marca:
-                            </p>
-                            <p><?php echo $row['marca']; ?></p>
-                            <p>Modelo:
-                            </p>
-                            <p><?php echo $row['modelo']; ?></p>
-                        </div>
-                        <div class="vehs-lnk">
-                            <a href="mod-vehs.php?id=<?php echo $row['id_vehiculo']; ?>" class="btn-cfcl">Modificar</a><a class="btn-cncl" href="del-veh.php?id=<?php echo $row['id_vehiculo']; ?>">Eliminar</a>
-                        </div>
-                    </div>
                 <?php
+                    }
                 }
                 ?>
                 <div class="vehs vehs-agr">
