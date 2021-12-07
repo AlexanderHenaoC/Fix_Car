@@ -28,7 +28,6 @@ if ($result_mod_cit == 0) {
         $id_tip_cit = $data_mod_cit['id_tip_cit'];
         $descripcion = $data_mod_cit['descripcion'];
         $fecha_cita = $data_mod_cit['fecha_cita'];
-        $hora_cita = $data_mod_cit['hora_cita'];
         $id_vehiculo = $data_mod_cit['id_vehiculo'];
         $nom_tip_cit = $data_mod_cit['nom_tip_cit'];
 
@@ -53,16 +52,46 @@ if (!empty($_POST)) {
     $alert_ex = "";
     $alert_save = "";
 
-    include "imod_cit.php";
+    // include "imod_cit.php";
+
+    $usuario = $_SESSION['id_usuario'];
+
+    $tip_cita = $_POST['tip_cita'];
+    $descripcion_c = $_POST['descripcion'];
+    $fecha_cita_c = $_POST['fecha_cita'];
+    $hora_cita_c = $_POST['hora_cita'];
+    $id_vehiculo_c = $_POST['id_vehiculo'];
+    $taller = $_POST['taller'];
+
+    if (empty($tip_cita)) {
+        array_push($alert, '<p>Seleccione un tipo de cita.</p>');
+    }
+    if (empty($descripcion_c)) {
+        array_push($alert, '<p>La descripción no puede estar vacia.</p>');
+    }
+    if (empty($fecha_cita_c)) {
+        array_push($alert, '<p>Seleccione un fecha.</p>');
+    }
+    if (empty($hora_cita_c)) {
+        array_push($alert, '<p>Seleccione un hora.</p>');
+    }
+    if (empty($id_vehiculo_c)) {
+        array_push($alert, '<p>Seleccione el vehículo.</p>');
+    }
+
+    $cal_ex = mysqli_query($conection, "SELECT * FROM cita WHERE (hora_cita = '$hora_cita_c' AND id_usuario = '$taller')");
+    $result_ex = mysqli_fetch_array($vel_ex);
+
     if (count($alert) == 0) {
         if (count($result_ex) > 0) {
             $alert_ex = '<p>La hora de la cita ya se encuentra asignada.</p>';
         } else {
+            $id_taller = $result_ex['id_usuario'];
             $sql_update = mysqli_query(
                 $conection,
                 "UPDATE cita
-                    SET descripcion = '$descripcion', fecha_Cita = '$fecha_cita', hora_cita = '$hora_cita', id_tipo_cita = '$tip_cit', 
-                    id_vehiculo = '$id_vehiculo', id_usuario = 'taller' 
+                    SET descripcion = '$descripcion_c', fecha_Cita = '$fecha_cita_c', hora_cita = '$hora_cita_c', id_tipo_cita = '$tip_cita', 
+                    id_vehiculo = '$id_vehiculo_c', id_usuario = '$taller' 
                     WHERE id_cita = '$id_cita'"
             );
             if ($sql_update) {
@@ -87,7 +116,7 @@ if (!empty($_POST)) {
     <link rel="stylesheet" href="../styles/proceso.css">
     <link rel="stylesheet" href="../styles/intfz-users.css">
     <link rel="shortcut icon" href="../images/logo_small_icon_only-removebg-preview.png" type="image/png">
-    <title>Modificar vehículo</title>
+    <title>Modificar cita</title>
 </head>
 
 <body>
@@ -140,8 +169,8 @@ if (!empty($_POST)) {
                         }
                         ?>
                     </select>
-                    <label for="descripcion" value="<?php echo $descripcion; ?>">Descripción</label>
-                    <textarea name="descripcion" id="descripcion" placeholder="Describa la razón de la cita"></textarea>
+                    <label for="descripcion">Descripción</label>
+                    <textarea name="descripcion" id="descripcion" placeholder="<?php echo $descripcion; ?>"></textarea>
                     <label for="fecha_cita">Fecha</label>
                     <input type="date" name="fecha_cita" id="fecha_cita" min="<?php echo $fecha_actual; ?>" max="<?php echo date("Y-m-d", strtotime($fecha_actual . "+ 1 month")); ?>">
                     <label for="hora_cita">Hora</label><br>
@@ -160,16 +189,23 @@ if (!empty($_POST)) {
 
                     <?php
                     $id_usuario = $_SESSION['id_usuario'];
-                    $query_veh = mysqli_query($conection, "SELECT * FROM vehiculo WHERE id_usuario = $id_usuario");
+                    $query_veh = mysqli_query($conection, "SELECT * FROM vehiculo WHERE id_usuario = '$id_usuario'");
                     $result_veh = mysqli_num_rows($query_veh);
+                    $query_veh_cit = mysqli_query($conection, "SELECT * FROM vehiculo WHERE id_vehiculo = '$id_vehiculo'");
+                    $placa_veh_cit = mysqli_fetch_array($query_veh_cit);
                     ?>
                     <select name="id_vehiculo" id="id_vehiculo">
                         <?php
+                        $option = '<option value="' . $id_tip_cit . '" select>' . $nom_tip_cit . '</option>';
+                        echo '<option select value="' . $placa_veh_cit['id_vehiculo'] . '">' . $placa_veh_cit['placa'] . '';
                         if ($result_veh > 0) {
                             while ($vehiculo = mysqli_fetch_array($query_veh)) {
+                                if ($placa_veh_cit['id_vehiculo'] == $vehiculo['id_vehiculo']) {
+                                } else {
                         ?>
-                                <option value="<?php echo $vehiculo['id_vehiculo']; ?>"><?php echo $vehiculo['placa']; ?></option>
+                                    <option value="<?php echo $vehiculo['id_vehiculo']; ?>"><?php echo $vehiculo['placa']; ?></option>
                         <?php
+                                }
                             }
                         }
                         ?>
@@ -190,7 +226,7 @@ if (!empty($_POST)) {
                         }
                         ?>
                     </select>
-                    <input class="btn btn-cfcl" type="submit" value="Agendar">
+                    <input class="btn btn-cfcl" type="submit" value="Modificar">
                 </form>
             </div>
         </div>

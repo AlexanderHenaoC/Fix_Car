@@ -32,7 +32,7 @@ include '../includes/validar_log_cli.php';
                 <?php
                 include "verveh.php";
                 while ($row = mysqli_fetch_assoc($query_ver_veh)) {
-                ?> 
+                ?>
                     <div class="vehs">
                         <div class="vehs-in">
                             <p><?php echo $row['placa']; ?></p>
@@ -49,7 +49,7 @@ include '../includes/validar_log_cli.php';
                             <p><?php echo $row['modelo']; ?></p>
                         </div>
                         <div class="vehs-lnk">
-                            <a href="mod-vehs.php?id=<?php echo $row['id_vehiculo'];?>" class="btn-cfcl">Modificar</a><a href="#" class="btn-cncl">Eliminar</a>
+                            <a href="mod-vehs.php?id=<?php echo $row['id_vehiculo']; ?>" class="btn-cfcl">Modificar</a><a class="btn-cncl" href="del-veh.php?id=<?php echo $row['id_vehiculo']; ?>">Eliminar</a>
                         </div>
                     </div>
                 <?php

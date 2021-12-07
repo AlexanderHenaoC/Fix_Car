@@ -68,7 +68,7 @@ session_start();
                                         <p><?php echo $row_d['hora_cita']; ?></p>
                                     </div>
                                     <div class="vehs-lnk">
-                                        <a href="mod-cits.php?id=<?php echo $row_d['id_cita']; ?>" class="btn-cfcl">Modificar</a><a href="#" class="btn-cncl">Cancelar</a>
+                                        <a href="mod-cits.php?id=<?php echo $row_d['id_cita']; ?>" class="btn-cfcl">Modificar</a><a href="del-cits.php?id=<?php echo $row_d['id_cita']; ?>" class="btn-cncl">Cancelar</a>
                                     </div>
                                 </div>
 
